@@ -1,62 +1,71 @@
 @font-face {
   font-family: "Fraunces";
-  src: url("../fonts/Fraunces9pt-Bold.woff2") format("woff2"),
-    url("../fonts/Fraunces9pt-Bold.woff") format("woff");
+  src: url("../fonts/Fraunces9pt-Bold.woff2") format("woff2"), url("../fonts/Fraunces9pt-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Barlow";
-  src: url("../fonts/Barlow-Bold.woff2") format("woff2"),
-    url("../fonts/Barlow-Bold.woff") format("woff");
+  src: url("../fonts/Barlow-Bold.woff2") format("woff2"), url("../fonts/Barlow-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Barlow";
-  src: url("../fonts/Barlow-Regular.woff2") format("woff2"),
-    url("../fonts/Barlow-Regular.woff") format("woff");
+  src: url("../fonts/Barlow-Regular.woff2") format("woff2"), url("../fonts/Barlow-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
 html {
-  height: 100%;
-  scroll-behavior: smooth;
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   margin: 0;
-  padding: 0;
 }
 
+/**
+ * Render the `main` element consistently in IE.
+ */
 main {
-  flex-grow: 1;
+  display: block;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  -o-object-fit: cover;
-  object-fit: cover;
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
 .visually-hidden {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -245,7 +254,7 @@ img {
   }
 }
 .collection {
-  padding-top: 144px;
+  padding-bottom: 144px;
 }
 
 .collection__inner {
@@ -256,4 +265,243 @@ img {
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
-} /*# sourceMappingURL=main.css.map */
+}
+
+.collection__content {
+  padding-top: 126px;
+  width: 100%;
+  max-width: 1111px;
+  margin: 0 auto;
+}
+
+.collection__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.collection__item {
+  width: 100%;
+  max-width: 255px;
+  text-align: center;
+}
+
+.collection__title {
+  margin: 0;
+  margin: 71px 0 24px;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333D4B;
+}
+
+.collection__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #333D4B;
+}
+
+@media only screen and (max-width: 768px) {
+  .collection__inner {
+    max-width: 689px;
+  }
+  .collection__content {
+    padding-top: 70px;
+    max-width: 689px;
+  }
+}
+.reason {
+  padding-bottom: 150px;
+}
+
+.reason__content {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.reason__inner {
+  position: relative;
+  padding: 112px 85px 0 85px;
+  background-color: #333D4B;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.reason__title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: "Fraunces", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #FEFCF7;
+}
+
+.reason__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.reason__list {
+  margin: 0;
+  position: relative;
+  top: 130px;
+  padding: 0;
+  width: 100%;
+  max-width: 1110px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reason__item {
+  padding: 72px 48px 48px;
+  width: 100%;
+  max-width: 350px;
+  background: #0E8784;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.reason-box__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "Fraunces", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #FEFCF7;
+}
+
+.reason-box__text::before {
+  margin: 0 auto;
+  margin-bottom: 56px;
+  content: "";
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url("../images/choose-1.svg");
+  background-repeat: no-repeat;
+}
+
+.box__2::before {
+  content: "";
+  background-image: url("../images/choose-2.svg");
+}
+
+.box__3::before {
+  content: "";
+  background-image: url("../images/choose-3.svg");
+}
+
+.reason-box__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #FEFCF7;
+}
+
+@media only screen and (max-width: 768px) {
+  .reason__inner {
+    padding: 71px 74px 0 74px;
+    max-height: 590px;
+  }
+  .reason__list {
+    top: 66px;
+    flex-direction: column;
+  }
+  .reason__item {
+    padding: 41px 48px 41px 48px;
+    max-width: 573px;
+  }
+  .reason-box__title {
+    text-align: start;
+  }
+  .reason-box__desc {
+    text-align: start;
+  }
+  .reason__item + .reason__item {
+    margin-top: 24px;
+  }
+  .reason-box__text {
+    max-width: 344px;
+    margin-left: 55px;
+  }
+  .reason-box__text::before {
+    display: none;
+  }
+  .reason-box {
+    display: flex;
+    align-items: center;
+  }
+  .reason-box::before {
+    margin: 0 auto;
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-image: url("../images/choose-1.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .reason__inner {
+    max-height: 900px;
+    padding: 64px 24px;
+  }
+  .reason-box::before {
+    display: none;
+  }
+  .reason__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .reason-box__text {
+    max-width: 212px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .reason-box__text::before {
+    margin: 0 auto;
+    margin-bottom: 56px;
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-image: url("../images/choose-1.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .reason-box__title {
+    text-align: center;
+  }
+  .reason__item {
+    padding: 72px 33px 51px 33px;
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */
