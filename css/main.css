@@ -124,7 +124,7 @@ h1 {
   display: none;
   width: 16px;
   height: 16px;
-  background-image: url(../images/menu.svg);
+  background-image: url("../images/menu.svg");
   background-repeat: no-repeat;
   background-position: top right;
   border: none;
@@ -157,11 +157,11 @@ h1 {
 }
 
 .hero__inner {
-  padding: 117px 85px 116px;
-  background-image: url(../images/hero-bg.jpg);
+  padding: 117px 116px;
+  background-image: url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   border-radius: 10px;
-  background-size: 1005;
+  background-size: 100%;
 }
 
 .hero__content {
